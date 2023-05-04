@@ -13,4 +13,13 @@
 <button type="button" class="btn btn-dark">Dark</button>
 
 <button type="button" class="btn btn-link">Link</button>
+
+<br>
+<hr>
+
+<h1>{{.Title}}</h1>
+<p>{{.Message}}</p>
+{{if .Name}}
+<p>Welcome, {{.Name}}!</p>
+{{end}}
 {{end}}

@@ -1,13 +1,28 @@
 package main
 
 import (
-    "net/http"
+	"log"
+	"net/http"
 
-    "github.com/bhuvaneshsaha/web-app-1/web/handlers"
+	"github.com/bhuvaneshsaha/web-app-1/web/config"
 )
 
 func main() {
-    http.HandleFunc("/", handlers.HomeHandler)
-    http.HandleFunc("/about", handlers.AboutHandler)
-    http.ListenAndServe(":8080", nil)
+	// http.HandleFunc("/", handlers.HomeHandler)
+	// http.HandleFunc("/about", handlers.AboutHandler)
+	// http.HandleFunc("/product", handlers.ProductsHandler)
+
+	// http.ListenAndServe(":8080", nil)
+
+	var app config.AppConfig
+
+	serve := &http.Server{
+		Addr:    ":8080",
+		Handler: routes(&app),
+	}
+
+	erro := serve.ListenAndServe()
+
+	log.Fatal(erro)
+
 }
