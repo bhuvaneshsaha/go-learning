@@ -1,0 +1,20 @@
+{
+  "name": "final-demo-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "npx tailwindcss -i ./web/src/styles/tailwind.css -o ./web/public/css/output.css",
+    "watch:css": "npx tailwindcss -i ./web/src/styles/tailwind.css -o ./web/public/css/output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "autoprefixer": "^10.4.14",
+    "daisyui": "^2.51.6",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.2"
+  }
+}

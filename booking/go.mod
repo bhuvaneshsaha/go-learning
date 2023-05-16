@@ -1,5 +1,4 @@
-module github.com/bhuvaneshsaha/web-app-1
-
+module github.com/bhuvaneshsaha/booking
 go 1.19
 
 require (

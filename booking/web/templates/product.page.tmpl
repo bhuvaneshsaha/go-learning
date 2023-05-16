@@ -1,0 +1,11 @@
+{{ template "base" . }}
+
+{{define "content" }}
+    <ul>
+        {{range .Products}}
+        <li>{{.Name}} - ${{.Price}}</li>
+        {{end}}
+    </ul>
+{{end}}
+
+

@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/alexedwards/scs/v2"
-	"github.com/bhuvaneshsaha/web-app-1/web/config"
+	"github.com/bhuvaneshsaha/booking/web/config"
 )
 
 var app *config.AppConfig

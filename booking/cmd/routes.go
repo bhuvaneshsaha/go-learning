@@ -3,8 +3,8 @@ package main
 import (
 	"net/http"
 
-	"github.com/bhuvaneshsaha/web-app-1/web/config"
-	"github.com/bhuvaneshsaha/web-app-1/web/handlers"
+	"github.com/bhuvaneshsaha/booking/web/config"
+	"github.com/bhuvaneshsaha/booking/web/handlers"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
 )

@@ -3,8 +3,8 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/bhuvaneshsaha/web-app-1/web/config"
-	"github.com/bhuvaneshsaha/web-app-1/web/render"
+	"github.com/bhuvaneshsaha/booking/web/config"
+	"github.com/bhuvaneshsaha/booking/web/render"
 )
 
 func HomeHandler(w http.ResponseWriter, r *http.Request) {

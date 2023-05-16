@@ -3,8 +3,8 @@ package handlers
 import (
 	"net/http"
 
-	"github.com/bhuvaneshsaha/web-app-1/web/config"
-	"github.com/bhuvaneshsaha/web-app-1/web/render"
+	"github.com/bhuvaneshsaha/booking/web/config"
+	"github.com/bhuvaneshsaha/booking/web/render"
 )
 
 func AboutHandler(w http.ResponseWriter, r *http.Request) {
@@ -12,7 +12,7 @@ func AboutHandler(w http.ResponseWriter, r *http.Request) {
 	appConfig := config.GetConfig()
 
 	stringMap := make(map[string]string)
-	stringMap["test"]="Hello again."
+	stringMap["test"] = "Hello again."
 
 	iip := appConfig.Sessions.GetString(r.Context(), "remote_ip")
 
