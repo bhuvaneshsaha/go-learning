@@ -20,8 +20,11 @@ func routes() http.Handler {
 	mux.Handle("/static/*", http.StripPrefix("/static/", fs))
 
 	mux.Get("/", handlers.HomeHandler)
-	mux.Get("/about", handlers.AboutHandler)
-	mux.Get("/service", handlers.ServiceHandler)
+	mux.Get("/index", handlers.HomeHandler)
+	mux.Get("/features", handlers.FeatureHandler)
+	mux.Get("/support", handlers.SupportHandler)
+	mux.Get("/signin", handlers.SignInHandler)
+	mux.Get("/signup", handlers.SignUpHandler)
 
 	return mux
 }
