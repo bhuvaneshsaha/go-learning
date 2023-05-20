@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "npx tailwindcss -i ./web/src/styles/tailwind.css -o ./web/public/css/output.css",
-    "watch:css": "npx tailwindcss -i ./web/src/styles/tailwind.css -o ./web/public/css/output.css --watch"
+    "watch:css": "npx tailwindcss -i ./web/src/styles/tailwind.css -o ./web/public/css/output.css --watch",
+    "go:build": "go run ./app/*.go"
   },
   "keywords": [],
   "author": "",
