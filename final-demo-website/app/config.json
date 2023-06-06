@@ -1,0 +1,13 @@
+{
+    "AWS": {
+        "Region": "us-east-1",
+        "AccessKey": "<accesskey>",
+        "SecretKey": "<secretkey>"
+    },
+    "Email": {
+        "Sender": "bhuvaneshmib@gmail.com",
+        "Recipient": "bhuvaneshs@nallas.com",
+        "Subject": "Amazon SES Test (AWS SDK for Go)",
+        "CharSet": "UTF-8"
+    }
+}

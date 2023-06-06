@@ -5,7 +5,8 @@ import (
 	"html/template"
 	"net/http"
 
-	"github.com/bhuvaneshsaha/website-demo/web/render"
+	"github.com/bhuvaneshsaha/final-demo-website/app/services/emailService"
+	"github.com/bhuvaneshsaha/final-demo-website/web/render"
 )
 
 func HomeHandler(w http.ResponseWriter, r *http.Request) {
@@ -120,6 +121,8 @@ func FormHandler(w http.ResponseWriter, r *http.Request) {
 	fmt.Println(email)
 	fmt.Println(phone)
 	fmt.Println(subject)
+
+	emailService.SendEmail("")
 
 	http.Redirect(w, r, "/", http.StatusSeeOther)
 }

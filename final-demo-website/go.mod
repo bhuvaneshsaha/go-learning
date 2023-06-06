@@ -1,4 +1,4 @@
-module github.com/bhuvaneshsaha/website-demo
+module github.com/bhuvaneshsaha/final-demo-website
 
 go 1.19
 

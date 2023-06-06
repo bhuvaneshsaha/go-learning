@@ -3,7 +3,7 @@ package main
 import (
 	"net/http"
 
-	"github.com/bhuvaneshsaha/website-demo/web/handlers"
+	"github.com/bhuvaneshsaha/final-demo-website/web/handlers"
 	"github.com/go-chi/chi"
 )
 
