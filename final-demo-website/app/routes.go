@@ -25,6 +25,7 @@ func routes() http.Handler {
 	mux.Get("/support", handlers.SupportHandler)
 	mux.Get("/signin", handlers.SignInHandler)
 	mux.Get("/signup", handlers.SignUpHandler)
+	mux.Post("/form", handlers.FormHandler)
 
 	return mux
 }
